@@ -42,11 +42,21 @@
 
 // Задание 4
 
-// Даны числа 52, 53, 49, 77, 21, 32. Необходимо найти среди этих чисел наименьшее и наибольшее числа и вывести их в консоль.
+// // Даны числа 52, 53, 49, 77, 21, 32. Необходимо найти среди этих чисел наименьшее и наибольшее числа и вывести их в консоль.
 
-const numArr = [52, 53, 49, 77, 21, 32];
+// const numArr = [52, 53, 49, 77, 21, 32];
 
-/* Наименьшее значение */ const minimum = Math.min(...numArr);
-/* Наибольшее значение*/ const maximum = Math.max(...numArr);
-console.log(minimum); 
-console.log(maximum);
+// /* Наименьшее значение */ const minimum = Math.min(...numArr);
+// /* Наибольшее значение*/ const maximum = Math.max(...numArr);
+// console.log(minimum); 
+// console.log(maximum);
+
+// Задание 5 
+
+// Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
+function printRandomNumber() {
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNumber);
+}
+
+printRandomNumber();
