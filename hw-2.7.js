@@ -118,23 +118,58 @@
 
 // Задание 10
 
-function formatDateTime(date) {
-    const options = {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric',
-      timeZoneName: 'short'
-    };
+// function formatDateTime(date) {
+//     const options = {
+//       weekday: 'long',
+//       year: 'numeric',
+//       month: 'long',
+//       day: 'numeric',
+//       hour: 'numeric',
+//       minute: 'numeric',
+//       second: 'numeric',
+//       timeZoneName: 'short'
+//     };
 
-    const formattedDate = date.toLocaleString('ru-RU', options);
-    return formattedDate;
+//     const formattedDate = date.toLocaleString('ru-RU', options);
+//     return formattedDate;
+//   }
+
+//   // Пример использования:
+//   let currentDate = new Date();
+//   let result = formatDateTime(currentDate);
+//   console.log(result);
+
+// Исходный массив слов
+
+function shuffleArray(array) {
+    // Функция для перемешивания элементов массива
+    return array.sort(() => Math.random() - 0.5);
   }
-
-  // Пример использования:
-  let currentDate = new Date();
-  let result = formatDateTime(currentDate);
-  console.log(result);
+  
+  function playGame() {
+    // Исходный массив слов
+    const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  
+    // Перемешиваем элементы массива
+    const shuffledWords = shuffleArray(words);
+  
+    // Выводим перемешанные слова на экран
+    alert(shuffledWords.join(', '));
+  
+    // Запрашиваем у пользователя первый и последний элементы массива
+    const userGuessFirst = prompt('Чему равнялся первый элемент массива?');
+    const userGuessLast = prompt('Чему равнялся последний элемент массива?');
+  
+    // Проверяем угадывание и выводим результат
+    if (userGuessFirst === words[0] && userGuessLast === words[words.length - 1]) {
+      alert('Поздравляю! Вы угадали оба элемента.');
+    } else if (userGuessFirst === words[0] || userGuessLast === words[words.length - 1]) {
+      alert('Вы были близки к победе! Вы угадали один элемент.');
+    } else {
+      alert('Вы ответили неверно. Попробуйте еще раз.');
+    }
+  }
+  
+  // Вызываем функцию playGame при клике на кнопку "Играть"
+  document.getElementById('wordsGame').addEventListener('click', playGame);
+  
