@@ -97,7 +97,21 @@
 
 
 // Задание 8 
-// Выведите в консоль текущую дату в стандартном режиме
+// // Выведите в консоль текущую дату в стандартном режиме
 
-let currentDate = new Date();
-console.log(currentDate);
+// let currentDate = new Date();
+// console.log(currentDate);
+
+// Задание 9
+// Создайте переменную currentDate и сохраните в нее текущую дату. Выведите дату, которая наступит через 73 дня после текущей.
+// Создаем объект Date и сохраняем в переменную currentDate текущую дату
+
+let currentDate = new Date();	
+console.log(currentDate);	
+// Получаем текущий день и прибавляем 73 дня
+let futureDate = new Date(currentDate);
+futureDate.setDate(currentDate.getDate() + 73);
+
+// Выводим результат в консоль
+console.log("Текущая дата:", currentDate.toDateString());
+console.log("Дата через 73 дня:", futureDate.toDateString());
