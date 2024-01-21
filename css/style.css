@@ -33,6 +33,7 @@ background-position: bottom;
     font-weight: 300;
     line-height: 32px; 
     margin-bottom: 44px;
+    max-width: 481px;
 }
 .header__text-color{
     color: #FFF;
@@ -91,4 +92,91 @@ background-position: bottom;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px; 
+}
+
+
+@media (max-width: 375px ){
+    .container{
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .header{
+        background-image: url(../img/mobile_bg.png);
+        background-repeat: no-repeat;
+        background-size: inherit;
+        max-height: 735px;
+        background-position: initial;
+    }
+    .header__h1{
+        text-align: center;
+        padding-top: 215px;
+        max-width: 100%;
+        font-size: 32px;
+    }
+    .header__text {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .btn__mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .cart__item {
+        max-width: 343px;
+        margin-bottom: 32.30px;
+    }
+    .cart__item:last-child{
+        margin-bottom: 96px;
+    }
+    .cart__content{
+        display: block;
+    }
+   
+}
+
+@media (max-width: 768px ){
+    .container{
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .header{
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 735px;
+        background-position: bottom;
+    }
+    .header_text-mobile {
+        display: flex;
+        justify-content: center;
+    }
+    .header__h1{
+        text-align: center;
+        padding-top: 215px;
+        max-width: 100%;
+        font-size: 32px;
+    }
+    .header__text {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+    .btn__mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .cart__item {
+        max-width: 343px;
+        margin-bottom: 32.30px;
+    }
+    .cart__item:last-child{
+        margin-bottom: 96px;
+    }
+    .cart__content{
+        display: block;
+    }
 }
