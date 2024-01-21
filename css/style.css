@@ -94,6 +94,64 @@ background-position: bottom;
     line-height: 32px; 
 }
 
+.seasons {
+    background: #000915;
+    display: flex;
+    justify-content: center;
+    padding-top: 282px;
+    padding-bottom: 282px;
+}
+
+.seasons__content {
+    display: flex;
+}
+
+.seasons__left{
+    margin-right: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.seasons__title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.seasons__text{
+    max-width: 584px;
+    color: silver;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px; 
+    margin-bottom: 32px;
+}
+.seasons__btn{
+    width: 234.063px;
+    height: 48.603px;
+    border-radius: 30px;
+    background: #9C0332;
+    border: none;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.seasons__btn:hover{
+    background: #630521;
+}
+
+
+
 
 @media (max-width: 375px ){
     .container{
@@ -120,7 +178,7 @@ background-position: bottom;
         font-size: 14px;
         margin-bottom: 32px;
     }
-    .btn__mobile{
+  .btn__mobile{
         display: flex;
         justify-content: center;
     }
@@ -134,6 +192,40 @@ background-position: bottom;
     .cart__content{
         display: block;
     }
+
+    .seasons{
+        padding-top: 179px;
+        padding-bottom: 179px;
+    }
+
+    .seasons__title{
+        text-align: center;
+        font-size: 32px;
+    }
+    .seasons__text{
+        width: 343px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .seasons__content{
+        display: block;
+    }
+    .seasons__left{
+        margin-right: 0;
+        margin-bottom: 64px;
+    }
+
+    .seasons__button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .seasons__img{
+        width: 344px;
+    height: 236px;
+    }
+
+   
    
 }
 
@@ -178,5 +270,38 @@ background-position: bottom;
     }
     .cart__content{
         display: block;
+    }
+
+
+    .seasons{
+        padding-top: 179px;
+        padding-bottom: 179px;
+    }
+
+    .seasons__title{
+        text-align: center;
+        font-size: 32px;
+    }
+    .seasons__text{
+        width: 343px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .seasons__content{
+        display: block;
+    }
+    .seasons__left{
+        margin-right: 0;
+        margin-bottom: 64px;
+    }
+
+    .seasons__button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .seasons__img{
+        width: 344px;
+    height: 236px;
     }
 }
