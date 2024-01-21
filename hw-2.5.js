@@ -86,22 +86,48 @@
 
 // Задача 6
 
-function cubeAndReturnString() {
-    let userInput = prompt('Введите число:');
+// function cubeAndReturnString() {
+//     let userInput = prompt('Введите число:');
   
-    // Проверка, является ли введенное значение числом
-    if (isNaN(userInput)) {
-        return 'Переданный параметр не является числом';
-    }
+//     // Проверка, является ли введенное значение числом
+//     if (isNaN(userInput)) {
+//         return 'Переданный параметр не является числом';
+//     }
   
-    let number = parseFloat(userInput);
-    let result = Math.pow(number, 3);
+//     let number = parseFloat(userInput);
+//     let result = Math.pow(number, 3);
   
-    return number + ' в кубе равняется ' + result;
+//     return number + ' в кубе равняется ' + result;
+//   }
+  
+//   // Проверка для чисел от 0 до 10
+//   for (let i = 0; i <= 10; i++) {
+//     let output = cubeAndReturnString(i);
+//     console.log(output);
+//   }
+
+// Задание 7
+
+// Функция для создания объекта круга
+function createCircle(radius) {
+    return {
+        radius: radius,
+        getArea: function() {
+            return Math.PI * Math.pow(this.radius, 2);
+        },
+        getPerimeter: function() {
+            return 2 * Math.PI * this.radius;
+        }
+    };
   }
   
-  // Проверка для чисел от 0 до 10
-  for (let i = 0; i <= 10; i++) {
-    let output = cubeAndReturnString(i);
-    console.log(output);
-  }
+  // Создание объектов circle1 и circle2
+  let circle1 = createCircle(5);
+  let circle2 = createCircle(8);
+  
+  // Пример использования методов
+  console.log('Площадь circle1:', circle1.getArea());
+  console.log('Периметр circle1:', circle1.getPerimeter());
+  
+  console.log('Площадь circle2:', circle2.getArea());
+  console.log('Периметр circle2:', circle2.getPerimeter());
