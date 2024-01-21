@@ -51,16 +51,21 @@
 // alert(age);
 
 // Задание 9.0
-let  user = {
-    name: "John",
-    age: 25,
-    isAdmin: true
-}
- user.cityOfResidence = "New York";
+// let  user = {
+//     name: "John",
+//     age: 25,
+//     isAdmin: true
+// }
+//  user.cityOfResidence = "New York";
 
- user.age = 30;
- delete user.cityOfResidence;
+//  user.age = 30;
+//  delete user.cityOfResidence;
 
- let info = prompt("Какую информацию хотите узнать о пользователе?");
+//  let info = prompt("Какую информацию хотите узнать о пользователе?");
 
- alert(user[info]);
+//  alert(user[info]);
+
+//  задание 10
+let userrName = prompt("Введите ваше имя:");
+
+alert(`Привет, ${userrName}!`);
