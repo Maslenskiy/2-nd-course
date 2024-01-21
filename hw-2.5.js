@@ -50,17 +50,36 @@
 // Задача 4
 
 
-function greetUser() {
-    let age = prompt('Сколько вам лет?');
+// function greetUser() {
+//     let age = prompt('Сколько вам лет?');
   
-    if (isNaN(age) || age < 0) {
-        console.log('Вы ввели неправильное значение');
-    } else if (age >= 0 && age <= 12) {
-        console.log('Привет, друг!');
-    } else {
-        console.log('Добро пожаловать!');
+//     if (isNaN(age) || age < 0) {
+//         console.log('Вы ввели неправильное значение');
+//     } else if (age >= 0 && age <= 12) {
+//         console.log('Привет, друг!');
+//     } else {
+//         console.log('Добро пожаловать!');
+//     }
+//   }
+  
+//   // Вызов функции
+//   greetUser();
+
+// Задача 5
+
+function multiplyNumbers(num1, num2) {
+    // Проверка, являются ли оба параметра числами
+    if (typeof num1 !== 'number' || typeof num2 !== 'number' || isNaN(num1) || isNaN(num2)) {
+        return 'Одно или оба значения не являются числом';
     }
+  
+    // Если оба параметра - числа, возвращаем их произведение
+    return num1 * num2;
   }
   
-  // Вызов функции
-  greetUser();
+  // Пример использования функции
+  let result = multiplyNumbers(5, 7);
+  console.log(result);  // Выведет 35
+  
+  result = multiplyNumbers('abc', 7);
+  console.log(result);  // Выведет 'Одно или оба значения не являются числом'
