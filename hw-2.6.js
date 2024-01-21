@@ -101,14 +101,25 @@
 // [9, 8, 7, 6, 5].
 // Попросить пользователя угадать число (использовать prompt). Если значение, которое ввёл пользователь, есть в массиве, вывести в alert «Угадал», в противном случае вывести «Не угадал».
 
-const myArray = [9, 8, 7, 6, 5];
+// const myArray = [9, 8, 7, 6, 5];
 
-let users = prompt('Угадай число');
+// let users = prompt('Угадай число');
 
-let userNumber = parseInt(users);
+// let userNumber = parseInt(users);
 
-if (!isNaN(userNumber) && myArray.includes(userNumber)) {
-    alert("Угадал!");
-} else {
-    alert("Не угадал.");
-}
+// if (!isNaN(userNumber) && myArray.includes(userNumber)) {
+//     alert("Угадал!");
+// } else {
+//     alert("Не угадал.");
+// }
+
+// Задание 8
+
+// Дана строка: 'abcdef'.
+// Необходимо, чтобы программа вывела в консоль 'fedcba'
+
+let str = 'abcsef';
+
+let result = str.split('').reverse().join('');
+
+console.log(result);
