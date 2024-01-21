@@ -48,19 +48,30 @@
 
 // С помощью вложенных циклов создайте многомерный массив вида: [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 
-let rows = 3;
-let cols = 3;
-let multiArray = [];
+// let rows = 3;
+// let cols = 3;
+// let multiArray = [];
 
-for(let i = 0; i < rows; i++){
+// for(let i = 0; i < rows; i++){
 
-    let innerArray = [];
+//     let innerArray = [];
 
-    for(let j = 0; j < cols; j++){
+//     for(let j = 0; j < cols; j++){
 
-        innerArray.push(1);
-    }
-  multiArray.push(innerArray);
-}
+//         innerArray.push(1);
+//     }
+//   multiArray.push(innerArray);
+// }
 
-console.log(multiArray);
+// console.log(multiArray);
+
+// Задание 5
+
+
+// Дан массив: [1, 1, 1] Добавьте в конец массива значения 2, 2, 2.
+
+const arr = [1, 1, 1];
+
+ arr.push(2, 2, 2);
+
+console.log(arr);
