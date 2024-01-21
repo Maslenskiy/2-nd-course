@@ -162,22 +162,58 @@
 
 // Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
 
-function squareArray(arr) {
-    // Создаем новый массив для хранения квадратов чисел
+// function squareArray(arr) {
+//     // Создаем новый массив для хранения квадратов чисел
+//     let result = [];
+
+//     // Используем цикл для перебора элементов входного массива
+//     for (let i = 0; i < arr.length; i++) {
+//         // Квадрат каждого числа добавляется в новый массив
+//         result.push(arr[i] * arr[i]);
+//     }
+
+//     // Возвращаем новый массив с квадратами чисел
+//     return result;
+// }
+
+// // Пример использования функции
+// let inputArray = [1, 2, 3, 4, 5];
+// let squaredArray = squareArray(inputArray);
+
+// console.log(squaredArray);
+
+// Задание 12
+
+// Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов.
+
+// Пример вызова:
+
+// getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']); // [5, 0, 4, 19, 5]
+
+function getLengthWords(arr) {
+    // Создаем новый массив для хранения длины слов
     let result = [];
 
     // Используем цикл для перебора элементов входного массива
     for (let i = 0; i < arr.length; i++) {
-        // Квадрат каждого числа добавляется в новый массив
-        result.push(arr[i] * arr[i]);
+        // Разбиваем каждую строку на слова
+        let words = arr[i].split(' ');
+
+        // Используем еще один цикл для вычисления длины каждого слова
+        let wordLengths = words.map(function(word) {
+            return word.length;
+        });
+
+        // Добавляем длины слов в итоговый массив
+        result = result.concat(wordLengths);
     }
 
-    // Возвращаем новый массив с квадратами чисел
+    // Возвращаем массив длин слов
     return result;
 }
 
 // Пример использования функции
-let inputArray = [1, 2, 3, 4, 5];
-let squaredArray = squareArray(inputArray);
+let inputArray = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+let lengthArray = getLengthWords(inputArray);
 
-console.log(squaredArray);
+console.log(lengthArray); 
