@@ -66,20 +66,32 @@
 // Задание 6
 
 // Напишите функцию, которая будет принимать на вход целое число, а возвращать массив случайных целых чисел от 0 до переданного числа. Длина массива должна быть в 2 раза меньше переданного числа.
-function getRandomArrNumbers(maxNumber) {
-    const arrayLength = Math.floor(maxNumber / 2);
-    const randomNumbers = [];
+// function getRandomArrNumbers(maxNumber) {
+//     const arrayLength = Math.floor(maxNumber / 2);
+//     const randomNumbers = [];
 
-    for (let i = 0; i < arrayLength; i++) {
-        const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
-        randomNumbers.push(randomNumber);
-    }
+//     for (let i = 0; i < arrayLength; i++) {
+//         const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
+//         randomNumbers.push(randomNumber);
+//     }
 
-    return randomNumbers;
-}
+//     return randomNumbers;
+// }
 
 
-printRandomNumber();	// Примеры вызова функции
-console.log(getRandomArrNumbers(7)); // Например: [6, 2, 7]
-console.log(getRandomArrNumbers(12)); // Например: [9, 11, 10, 9, 3, 0]
+// printRandomNumber();	// Примеры вызова функции
+// console.log(getRandomArrNumbers(7)); // Например: [6, 2, 7]
+// console.log(getRandomArrNumbers(12)); // Например: [9, 11, 10, 9, 3, 0]
+
+// Задание 7
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Пример использования:
+  let result = getRandomInt(1, 10);
+  console.log(result);
 
