@@ -29,7 +29,19 @@
 // alert(result);
 
 // Задание 6
-const g = 9;
-const p = 2;
-let remainder = g % p;
-alert("Остаток от деления " + g + " на " + p + " равен " + remainder);
+// const g = 9;
+// const p = 2;
+// let remainder = g % p;
+// alert("Остаток от деления " + g + " на " + p + " равен " + remainder);
+
+// Задание 7
+
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
+
