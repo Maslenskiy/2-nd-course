@@ -53,10 +53,33 @@
 
 // Задание 5 
 
-// Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
-function printRandomNumber() {
-    const randomNumber = Math.floor(Math.random() * 10) + 1;
-    console.log(randomNumber);
+// // Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
+// function printRandomNumber() {
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//     console.log(randomNumber);
+// }
+
+// printRandomNumber();
+
+
+
+// Задание 6
+
+// Напишите функцию, которая будет принимать на вход целое число, а возвращать массив случайных целых чисел от 0 до переданного числа. Длина массива должна быть в 2 раза меньше переданного числа.
+function getRandomArrNumbers(maxNumber) {
+    const arrayLength = Math.floor(maxNumber / 2);
+    const randomNumbers = [];
+
+    for (let i = 0; i < arrayLength; i++) {
+        const randomNumber = Math.floor(Math.random() * (maxNumber + 1));
+        randomNumbers.push(randomNumber);
+    }
+
+    return randomNumbers;
 }
 
-printRandomNumber();
+
+printRandomNumber();	// Примеры вызова функции
+console.log(getRandomArrNumbers(7)); // Например: [6, 2, 7]
+console.log(getRandomArrNumbers(12)); // Например: [9, 11, 10, 9, 3, 0]
+
