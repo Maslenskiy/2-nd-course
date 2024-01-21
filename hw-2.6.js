@@ -130,10 +130,30 @@
 
 // Выведите в консоль массив вида: 
 // [1, 2, 3, 4, 5, 6].
-const arr = [[1, 2, 3], [4, 5, 6]];
+// const arr = [[1, 2, 3], [4, 5, 6]];
 
-let flattenedArr = arr.reduce(function (accumulator, currentArray) {
-    return accumulator.concat(currentArray);
-}, []);
+// let flattenedArr = arr.reduce(function (accumulator, currentArray) {
+//     return accumulator.concat(currentArray);
+// }, []);
 
-console.log(flattenedArr);
+// console.log(flattenedArr);
+
+
+// Задание 10
+
+// Создайте массив с произвольными числами (диапазон от 1 до 10). Переберите его с помощью цикла for
+// и в каждой итерации выведите в консоль сумму текущего и следующего элементов массива.
+
+// Следующий элемент массива можно получить с помощью индекса: i + 1. Обратите внимание, что у последнего элемента нет следующего.
+
+// Создаем массив с произвольными числами
+const myArray = [2, 7, 4, 1, 9, 5, 8, 3, 6, 10];
+
+// Перебираем массив с использованием цикла for
+for (let i = 0; i < myArray.length - 1; i++) {
+    // Вычисляем сумму текущего и следующего элементов
+    let sum = myArray[i] + myArray[i + 1];
+
+    // Выводим результат в консоль
+    console.log("Сумма элементов " + i + " и " + (i + 1) + ": " + sum);
+}
