@@ -31,11 +31,22 @@
 
 // До меньшего целого
 
-let num = 32.58884;
-console.log(Math.floor(num));
+// let num = 32.58884;
+// console.log(Math.floor(num));
 
-// До большего целого
-console.log(Math.ceil(num));
+// // До большего целого
+// console.log(Math.ceil(num));
 
-// До ближайшего целого
-console.log(Math.round(num));
+// // До ближайшего целого
+// console.log(Math.round(num));
+
+// Задание 4
+
+// Даны числа 52, 53, 49, 77, 21, 32. Необходимо найти среди этих чисел наименьшее и наибольшее числа и вывести их в консоль.
+
+const numArr = [52, 53, 49, 77, 21, 32];
+
+/* Наименьшее значение */ const minimum = Math.min(...numArr);
+/* Наибольшее значение*/ const maximum = Math.max(...numArr);
+console.log(minimum); 
+console.log(maximum);
