@@ -190,30 +190,45 @@
 
 // getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']); // [5, 0, 4, 19, 5]
 
-function getLengthWords(arr) {
-    // Создаем новый массив для хранения длины слов
-    let result = [];
+// function getLengthWords(arr) {
+//     // Создаем новый массив для хранения длины слов
+//     let result = [];
 
-    // Используем цикл для перебора элементов входного массива
-    for (let i = 0; i < arr.length; i++) {
-        // Разбиваем каждую строку на слова
-        let words = arr[i].split(' ');
+//     // Используем цикл для перебора элементов входного массива
+//     for (let i = 0; i < arr.length; i++) {
+//         // Разбиваем каждую строку на слова
+//         let words = arr[i].split(' ');
 
-        // Используем еще один цикл для вычисления длины каждого слова
-        let wordLengths = words.map(function(word) {
-            return word.length;
-        });
+//         // Используем еще один цикл для вычисления длины каждого слова
+//         let wordLengths = words.map(function(word) {
+//             return word.length;
+//         });
 
-        // Добавляем длины слов в итоговый массив
-        result = result.concat(wordLengths);
-    }
+//         // Добавляем длины слов в итоговый массив
+//         result = result.concat(wordLengths);
+//     }
 
-    // Возвращаем массив длин слов
-    return result;
+//     // Возвращаем массив длин слов
+//     return result;
+// }
+
+// // Пример использования функции
+// let inputArray = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+// let lengthArray = getLengthWords(inputArray);
+
+// console.log(lengthArray); 
+
+// Задание 13
+
+function filterPositive(array) {
+    // Используем метод filter для отбора отрицательных значений
+    let negativeValues = array.filter(function(value) {
+        return value < 0;
+    });
+
+    return negativeValues;
 }
 
 // Пример использования функции
-let inputArray = ['слово', '', 'слог', 'длинное предложение', 'буква'];
-let lengthArray = getLengthWords(inputArray);
-
-console.log(lengthArray); 
+console.log(filterPositive([-1, 0, 5, -10, 56])); 
+console.log(filterPositive([-25, 25, 0, -1000, -2])); 
