@@ -61,9 +61,45 @@
 
 // Задание 4
 
-let a = '2';
-let b = '3';
+// let a = '2';
+// let b = '3';
 
-// Преобразовываем строки в числа и выводим их сумму
-alert(Number(a) + Number(b));
+// // Преобразовываем строки в числа и выводим их сумму
+// alert(Number(a) + Number(b));
+
+// Задание 5
+
+let monthNumber = 12;
+
+// Проверка на недопустимый номер месяца
+if (monthNumber < 1 || monthNumber > 12) {
+  console.log('Неверный номер месяца');
+} else {
+  // Определение сезона с использованием оператора switch
+  switch (monthNumber) {
+    case 1:
+    case 2:
+    case 12:
+      console.log('Зима');
+      break;
+    case 3:
+    case 4:
+    case 5:
+      console.log('Весна');
+      break;
+    case 6:
+    case 7:
+    case 8:
+      console.log('Лето');
+      break;
+    case 9:
+    case 10:
+    case 11:
+      console.log('Осень');
+      break;
+    default:
+      console.log('Неверный номер месяца');
+  }
+}
+
 
