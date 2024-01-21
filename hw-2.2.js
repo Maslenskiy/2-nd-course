@@ -24,6 +24,12 @@
 // alert(10 / 2);
 
 // Задание 5
-let d = 2;
-let result = d**5
-alert(result);
+// let d = 2;
+// let result = d**5
+// alert(result);
+
+// Задание 6
+const g = 9;
+const p = 2;
+let remainder = g % p;
+alert("Остаток от деления " + g + " на " + p + " равен " + remainder);
