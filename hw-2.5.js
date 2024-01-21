@@ -99,3 +99,9 @@ function cubeAndReturnString() {
   
     return number + ' в кубе равняется ' + result;
   }
+  
+  // Проверка для чисел от 0 до 10
+  for (let i = 0; i <= 10; i++) {
+    let output = cubeAndReturnString(i);
+    console.log(output);
+  }
