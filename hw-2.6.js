@@ -81,16 +81,34 @@
 // Дан массив: 
 // [9, 8, 7, 'a', 6, 5]. С помощью метода sort отсортируйте массив и удалите букву 'a' из данного массива. В результате работы программы вывести массив, состоящий из цифр.
 
-let arr = [9, 8, 7, 'a', 6, 5];
+// let arr = [9, 8, 7, 'a', 6, 5];
 
-arr.sort((a, b) =>{
-    if(a === 'a') return 1;
+// arr.sort((a, b) =>{
+//     if(a === 'a') return 1;
 
-    if(b === 'a') return -1;
+//     if(b === 'a') return -1;
 
-    return a - b;
-})
+//     return a - b;
+// })
 
-let resultAraray = arr.filter(item => typeof item === 'number');
+// let resultAraray = arr.filter(item => typeof item === 'number');
 
-console.log(resultAraray);
+// console.log(resultAraray);
+
+// Задание 7 
+
+// Дан массив: 
+// [9, 8, 7, 6, 5].
+// Попросить пользователя угадать число (использовать prompt). Если значение, которое ввёл пользователь, есть в массиве, вывести в alert «Угадал», в противном случае вывести «Не угадал».
+
+const myArray = [9, 8, 7, 6, 5];
+
+let users = prompt('Угадай число');
+
+let userNumber = parseInt(users);
+
+if (!isNaN(userNumber) && myArray.includes(userNumber)) {
+    alert("Угадал!");
+} else {
+    alert("Не угадал.");
+}
