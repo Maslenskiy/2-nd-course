@@ -70,8 +70,27 @@
 
 // Дан массив: [1, 1, 1] Добавьте в конец массива значения 2, 2, 2.
 
-const arr = [1, 1, 1];
+// const arr = [1, 1, 1];
 
- arr.push(2, 2, 2);
+//  arr.push(2, 2, 2);
 
-console.log(arr);
+// console.log(arr);
+
+// Задание 6
+
+// Дан массив: 
+// [9, 8, 7, 'a', 6, 5]. С помощью метода sort отсортируйте массив и удалите букву 'a' из данного массива. В результате работы программы вывести массив, состоящий из цифр.
+
+let arr = [9, 8, 7, 'a', 6, 5];
+
+arr.sort((a, b) =>{
+    if(a === 'a') return 1;
+
+    if(b === 'a') return -1;
+
+    return a - b;
+})
+
+let resultAraray = arr.filter(item => typeof item === 'number');
+
+console.log(resultAraray);
