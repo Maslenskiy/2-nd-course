@@ -16,9 +16,14 @@
 
 // Задание 4
 
-let c = 10;
-let b = 2;
-alert(c + b);
-alert(c - b);
-alert(c * b);
-alert(10 / 2);
+// let c = 10;
+// let b = 2;
+// alert(c + b);
+// alert(c - b);
+// alert(c * b);
+// alert(10 / 2);
+
+// Задание 5
+let d = 2;
+let result = d**5
+alert(result);
