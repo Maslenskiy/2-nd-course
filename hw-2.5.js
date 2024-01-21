@@ -26,11 +26,23 @@
 
 // Задача 3.1
 
-function printSquare(number) {
-    let square = number * number;
-    console.log('Квадрат числа ' + number + ' равен ' + square);
+// function printSquare(number) {
+//     let square = number * number;
+//     console.log('Квадрат числа ' + number + ' равен ' + square);
+//   }
+  
+//   // Пример использования функции
+//   let num = prompt('Введите число: ');
+//   printSquare(parseInt(num));
+
+
+// Задача 3.2
+
+function calculateSquare(number) {
+    return number * number;
   }
   
   // Пример использования функции
-  let num = prompt('Введите число: ');
-  printSquare(parseInt(num));
+  let num1 = prompt('Введите число: ');
+  let square = calculateSquare(parseInt(num1));
+  console.log('Квадрат числа ' + num1 + ' равен ' + square);
