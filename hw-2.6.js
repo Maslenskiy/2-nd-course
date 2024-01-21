@@ -39,7 +39,28 @@
 
 // С помощью метода join выведите элементы массива через пробел (пустую строку ' ').
 
-const arr = [1, 3, 5, 10, 20];
+// const arr = [1, 3, 5, 10, 20];
 
-let result = arr.join(' ');
-console.log(result);
+// let result = arr.join(' ');
+// console.log(result);
+
+// Задание 4
+
+// С помощью вложенных циклов создайте многомерный массив вида: [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+
+let rows = 3;
+let cols = 3;
+let multiArray = [];
+
+for(let i = 0; i < rows; i++){
+
+    let innerArray = [];
+
+    for(let j = 0; j < cols; j++){
+
+        innerArray.push(1);
+    }
+  multiArray.push(innerArray);
+}
+
+console.log(multiArray);
