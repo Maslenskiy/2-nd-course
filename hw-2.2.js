@@ -11,5 +11,14 @@
 
 // Задание 3
 
-let userName = "Брендан Эйх";
-alert(userName);
+// let userName = "Брендан Эйх";
+// alert(userName);
+
+// Задание 4
+
+let c = 10;
+let b = 2;
+alert(c + b);
+alert(c - b);
+alert(c * b);
+alert(10 / 2);
