@@ -154,39 +154,27 @@
 
 // ИГРА
 
-function shuffleArray(array) {    
-    return array.sort(() => Math.random() - 0.5); 
- }
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
 
 function playGame() {
-    // Исходный массив слов
-    const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-    // Перемешиваем элементы массива
-    const shuffledWords = shuffleArray(words);
+  const shuffledWords = shuffleArray(words);
 
-    // Выводим перемешанные слова на экран
-    alert(shuffledWords.join(', '));
+  alert(shuffledWords.join(', '));
 
-    // Запрашиваем у пользователя первый и последний элементы массива
-    const userGuessFirst = prompt('Чему равнялся первый элемент массива?');
-    const userGuessLast = prompt('Чему равнялся последний элемент массива?');
+  const userGuessFirst = prompt('Чему равнялся первый элемент массива?').toLowerCase();
+  const userGuessLast = prompt('Чему равнялся последний элемент массива?').toLowerCase();
 
-    // Проверяем угадывание и выводим результат
-    if (userGuessFirst === words[0] && userGuessLast === words[words.length - 1]) {
+  if (userGuessFirst === words[0].toLowerCase() && userGuessLast === words[words.length - 1].toLowerCase()) {
       alert('Поздравляю! Вы угадали оба элемента.');
-    } else if (userGuessFirst === words[0] || userGuessLast === words[words.length - 1]) {
+  } else if (userGuessFirst === words[0].toLowerCase() || userGuessLast === words[words.length - 1].toLowerCase()) {
       alert('Вы были близки к победе! Вы угадали один элемент.');
-    } else {
+  } else {
       alert('Вы ответили неверно. Попробуйте еще раз.');
-    }
   }
+}
 
-  // Вызываем функцию playGame при клике на кнопку "Играть"
-  document.getElementById('wordsGame').addEventListener('click', playGame);
-
-
-
-
-
-
+document.getElementById('wordsGame').addEventListener('click', playGame);
