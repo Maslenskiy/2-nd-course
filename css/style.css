@@ -151,8 +151,31 @@ background-position: bottom;
 }
 
 
+.game__words{
+    background: #000915;
+    display: flex;
+    justify-content: center;
+    padding-top: 239px;
+    padding-bottom: 239px;
+   }
+
+   .game__content{
+    display: flex;
+   }
+   
+   .game__img{
+    margin-right: 135px;
+   }
+   .game__right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
 
 
+   .mobile__img{
+    display: none;
+   }
 @media (max-width: 375px ){
     .container{
         max-width: 100%;
@@ -195,7 +218,7 @@ background-position: bottom;
 
     .seasons{
         padding-top: 179px;
-        padding-bottom: 179px;
+        padding-bottom: 30px;
     }
 
     .seasons__title{
@@ -203,7 +226,7 @@ background-position: bottom;
         font-size: 32px;
     }
     .seasons__text{
-        width: 343px;
+       
         font-size: 14px;
         text-align: center;
     }
@@ -213,6 +236,10 @@ background-position: bottom;
     .seasons__left{
         margin-right: 0;
         margin-bottom: 64px;
+    }
+    .seasons__right{
+        display: flex;
+        justify-content: center;
     }
 
     .seasons__button{
@@ -224,9 +251,24 @@ background-position: bottom;
         width: 344px;
     height: 236px;
     }
+    .game__words{
+        padding-top: 85px;
+     display: block;
+       
+       }
+       .game__content{
+        display: block;
+       }
 
-   
-   
+    .game__mobile-img{
+     display: none;
+    }
+
+    .mobile__img{
+        display: block;
+        padding-top: 64px;
+       }
+
 }
 
 @media (max-width: 768px ){
@@ -275,7 +317,7 @@ background-position: bottom;
 
     .seasons{
         padding-top: 179px;
-        padding-bottom: 179px;
+        padding-bottom: 30px;
     }
 
     .seasons__title{
@@ -283,7 +325,7 @@ background-position: bottom;
         font-size: 32px;
     }
     .seasons__text{
-        width: 343px;
+        
         font-size: 14px;
         text-align: center;
     }
@@ -294,7 +336,10 @@ background-position: bottom;
         margin-right: 0;
         margin-bottom: 64px;
     }
-
+    .seasons__right{
+        display: flex;
+        justify-content: center;
+    }
     .seasons__button{
         display: flex;
         justify-content: center;
@@ -304,4 +349,28 @@ background-position: bottom;
         width: 344px;
     height: 236px;
     }
+
+    .game__words{
+        padding-top: 85px;
+     display: block;
+       
+       }
+       .game__content{
+        display: block;
+       }
+
+    .game__mobile-img{
+     display: none;
+    }
+
+    .mobile__img{
+        display: block;
+        padding-top: 64px;
+        width: 344px;
+        height: 231px;
+       }
+
+.game__right-content{
+    align-items: center;
+}
 }
