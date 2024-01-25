@@ -49,15 +49,28 @@
 
 // Задание 3
 
-let secondsPassed = 0;
+// let secondsPassed = 0;
 
-const intervalId = setInterval(() => {
-  const currentDate = new Date();
-  console.log(currentDate);
-  secondsPassed += 3;
+// const intervalId = setInterval(() => {
+//   const currentDate = new Date();
+//   console.log(currentDate);
+//   secondsPassed += 3;
 
-  if (secondsPassed >= 30) {
-    clearInterval(intervalId);
-    console.log('30 секунд прошло');
+//   if (secondsPassed >= 30) {
+//     clearInterval(intervalId);
+//     console.log('30 секунд прошло');
+//   }
+// }, 3000);
+
+// Задание 4
+
+function delayForSecond(callback) {
+    setTimeout(function () {
+      callback();
+    }, 1000);
   }
-}, 3000);
+  
+  delayForSecond(function () {
+    console.log('Привет, Глеб!');
+  });
+  
